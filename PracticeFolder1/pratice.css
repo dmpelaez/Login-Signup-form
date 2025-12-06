@@ -1,0 +1,19 @@
+.date {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  display: block;
+  overflow: auto;
+}
+p {
+  display: flex;
+  justify-content: center;
+}
+.scrollbar {
+  width: 200px;
+  border: 1px solid black;
+  height: 200px;
+  overflow: auto;
+  display: block;
+  padding: 5px;
+}

@@ -1,0 +1,60 @@
+.mainpage {
+  margin-top: 60px;
+  flex-shrink: 0;
+  background-color: rgb(10, 22, 44);
+
+  height: 100%;
+}
+
+.main-body {
+  gap: 20px;
+  display: flex;
+ align-items: center;
+  justify-self: center;
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  flex-shrink: 0;
+ 
+}
+@media (max-width: 700px) {
+  .main-body {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    gap: 40px;
+  }
+}
+
+.pic-of-me {
+  width: 400px;
+  border-radius: 50%;
+}
+.greetings {
+  color: rgb(255, 217, 0);
+}
+.myName {
+  color: white;
+}
+.briefInfo {
+  color: rgb(197, 195, 195);
+}
+.contact-button {
+  padding: 10px;
+  border: 1px solid rgb(255, 217, 0);
+  background-color: rgb(255, 217, 0);
+  font-family: anton;
+  width: 200px;
+  cursor: pointer;
+}
+.footClass {
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  background-color: rgb(22, 22, 22);
+  right: 0px;
+  left: 0px;
+  height: 30px;
+}
+

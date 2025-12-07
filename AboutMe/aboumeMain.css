@@ -25,6 +25,9 @@
     padding-bottom: 100px;
     gap: 40px;
   }
+  .mainpage {
+    height: 2000px;
+  }
 }
 
 .pic-of-me {

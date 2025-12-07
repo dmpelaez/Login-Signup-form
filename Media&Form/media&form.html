@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+  <html lang="en" dir="ltr">
+
+    <head>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+      <title>Media & Form</title>
+
+      <link rel="stylesheet" href="media&form.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+      
+    </head>
+
+    <body>
+
+      <!--Form start here-->
+      <div class="form">
+
+        <form class="log-form" action="" method="post">
+          <i class="fas fa-user"></i>
+          <input class="user-input" type="text" name="" id="username" placeholder="" required>
+          <label for="username">Username</label>
+          
+          <input class="user-input" type="password" id="password" name="" placeholder="" required>
+          <label for="password">Password</label>
+
+          <div class="options-01">
+            <label class="remember-me"><input type="checkbox">Remember me</label>
+            <a href="#">Forgot your password?</a>
+          </div>
+
+          <input value="Login" name="" type="submit" class="btn">
+
+          <div class="options-02">
+            <p>Not Registered?<a href="#">Create an Account</a></p>
+          </div>
+
+        </form>
+
+        <!---login form end-->
+
+        <!---Sign up form start-->
+
+        <form method="post" class="sign-up" action="">
+            <i class="fas fa-user-plus"></i>
+            <input class="user-input" type="text" placeholder="" id="username2" name="" required>
+            <label for="username2">Username</label>
+
+            <input class="user-input" id="email" type="email" placeholder="" name="" required>
+            <label for="email">Email Address</label>
+
+            <input class="user-input" type="password" placeholder="" id="password2" name="name" required>
+            <label for="password2">Password</label>
+
+            <input class="btn" value="SIGN UP" type="submit" name="">
+            <div class="options-03">
+              <p>Already Registered?<a href="#">Sign up</a></p>
+            </div>
+        </form>
+
+      </div>
+
+      <script type="module" src="media&form.js"></script>
+
+    </body>
+
+  </html>

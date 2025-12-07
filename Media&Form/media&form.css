@@ -53,25 +53,25 @@ body {
 .form .sign-up {
   display: initial;
   transform: translateX(60%);
-  transition: transform ease-in 0.5s;
+  transition: transform ease-in 0.2s;
 }
 .form .log-form {
   display: initial;
   transform: translateX(50%);
-  transition: transform ease-in 0.5s;
+  transition: transform ease-in 0.2s;
   
 }
 
 .form .loginForm {
   display: initial;
     transform: translateX(-50%);
-  transition: transform ease-in 0.5s;
+  transition: transform ease-in 0.2s;
 }
 
 .form .signupForm {
   display: initial;
    transform: translateX(-60%);
-  transition: transform ease-in 0.5s;
+  transition: transform ease-in 0.2s;
 }
 
 

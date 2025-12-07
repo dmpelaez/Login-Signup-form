@@ -38,6 +38,7 @@ body {
   background-image: url("pexels-faikackmerd-1025469.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
  
 }
 .form i {
@@ -47,19 +48,30 @@ body {
   margin-bottom: 20px;
 }
 
+
+
 .form .sign-up {
-  display: none;
+  display: initial;
+  transform: translateX(60%);
+  transition: transform ease-in 0.5s;
 }
 .form .log-form {
   display: initial;
+  transform: translateX(50%);
+  transition: transform ease-in 0.5s;
+  
 }
 
 .form .loginForm {
   display: initial;
+    transform: translateX(-50%);
+  transition: transform ease-in 0.5s;
 }
 
 .form .signupForm {
-  display: none;
+  display: initial;
+   transform: translateX(-60%);
+  transition: transform ease-in 0.5s;
 }
 
 
@@ -82,8 +94,8 @@ body {
   color: white;
 
   position: absolute;
-  top: 147px;
-  left: 35px;
+  top: 90px;
+  left: 10px;
  
 }
 
@@ -94,8 +106,8 @@ body {
   text-shadow: 0 0 20px white;
   position: absolute;
 
-  top: 120px;
-  left: 35px;
+  top: 60px;
+  left: 10px;
   transition: ease 0.2s all;
 }
 
@@ -104,15 +116,15 @@ body {
   color: rgb(255, 255, 255);
 
   position: absolute;
-  left: 35px;
-  top: 210px;
+  left: 10px;
+  top: 155px;
 }
 
 .form .user-input:focus + label[for="password"],
 .form .user-input:not(:placeholder-shown) + label[for="password"] {
   transition: ease 0.2s all;
   position: absolute;
-  top: 185px;
+  top: 125px;
   color: white;
   text-shadow: 0 0 20px white;
 }
@@ -165,16 +177,16 @@ body {
 
 .form label[for="username2"] {
   position: absolute;
-  left: 35px; 
+  left: 10px; 
   font-size: 16px;
-  top: 134px;
+  top: 90px;
   color: rgb(255, 255, 255);
 }
 
 .form .user-input:focus + label[for="username2"],
 .form .user-input:not(:placeholder-shown) + label[for="username2"] {
   position: absolute;
-  top: 108px;
+  top: 60px;
   color: rgb(255, 255, 255);
    text-shadow: 0 0 20px white;
   transition: ease 0.2s all;
@@ -183,15 +195,15 @@ body {
 .form label[for="email"] {
   position: absolute;
   width: 200px;
-  left: -10px;
-  top: 200px;
+  left: -35px;
+  top: 155px;
   font-size: 16px;
   color: rgb(255, 255, 255);
 }
 
 .form .user-input:focus + label[for="email"],
 .form .user-input:not(:placeholder-shown) + label[for="email"] {
-top: 173px;
+top: 125px;
 transition: ease 0.2s all;
  text-shadow: 0 0 20px white;
 color: rgb(255, 255, 255);
@@ -200,16 +212,16 @@ color: rgb(255, 255, 255);
 
 .form label[for="password2"] {
   position: absolute;
-  left: 35px;
+  left: 10px;
   font-size: 16px;
-  top: 265px;
+  top: 220px;
   color: rgb(255, 255, 255);
 }
 
 .form .user-input:focus + label[for="password2"],
 .form .user-input:not(:placeholder-shown) + label[for="password2"] {
   color: rgb(255, 255, 255);
-  top: 238px;
+  top: 190px;
   text-shadow: 0 0 20px white;
   transition: ease 0.2s all;
 }

@@ -1,0 +1,179 @@
+
+* {
+  box-sizing: border-box;
+    margin: 0;
+  padding: 0;
+  color: white;
+  font-family: arial;
+}
+
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: rgb(18, 35, 109);
+  justify-content: center;
+  background-image: url("pexels-therato-1933239.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.cards-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100vh;
+ 
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  height: 350px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(to top, rgb(59, 12, 187), rgb(169, 134, 250));
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ 
+  transform: translate(-50%, -50%);
+  box-shadow: -20px 0px 20px rgba(0, 0, 0, 0.8);
+  transition: all ease 0.5s;
+}
+
+.container:hover {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  height: 350px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(to top, rgb(59, 12, 187), rgb(169, 134, 250));
+  justify-content: space-between;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  box-shadow: -20px 0px 20px rgba(0, 0, 0, 0.8);
+  transition: all ease 0.5s;
+  z-index: 1;
+  transform: z-index ease 0.3s;
+}
+
+.container:nth-child(1) {transform: translate(-50%, -50%) translateX(-300px);}
+.container:nth-child(2) {transform: translate(-50%, -50%) translateX(-100px);}
+.container:nth-child(3) {transform: translate(-50%, -50%) translateX(100px);}
+.container:nth-child(4) {transform: translate(-50%, -50%) translateX(300px);}
+.btn {
+  width: 100px;
+  color: black;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  background: yellow;
+}
+.profile {
+  display: flex;
+  
+}
+.level {
+  background: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 5px;
+  
+  display: flex;
+  justify-content: start;
+}
+.power-level {
+   background-color: yellow;
+  color: white;
+  width: 0px;
+  overflow: hiddden;
+  transition: all ease 0.4s;
+
+ 
+}
+.container:nth-child(1):hover .power-level{
+  background-color: yellow;
+  color: white;
+  width: 70px;
+   
+}
+
+.container:nth-child(2):hover .power-level{
+  background-color: yellow;
+  color: white;
+  width: 200px;
+   
+}
+
+.container:nth-child(3):hover .power-level{
+  background-color: yellow;
+  color: white;
+  width: 110px;
+   
+}
+.container:nth-child(4):hover .power-level{
+  background-color: yellow;
+  color: white;
+  width: 220px;
+   
+}
+.personalContact {
+  display: flex;
+  justify-content: space-between;
+  Height: 30px;
+  align-items: center;
+  margin-top: 20px;
+}
+.container .description {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
+}
+.position {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.name {
+  font-size: 19px;
+
+}
+.facebook {
+  width: 30px;
+}
+.infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.git {
+  width: 60px;
+}
+.yt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.youtube {
+  width: 50px;
+}

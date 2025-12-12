@@ -38,8 +38,6 @@ body {
   background-image: url("pexels-faikackmerd-1025469.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
- 
 }
 .form i {
   z-index: 1;

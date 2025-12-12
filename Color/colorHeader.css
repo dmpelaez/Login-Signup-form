@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.color-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgb(223, 220, 220);
+  box-sizing: border-box;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 70px;
+  border-bottom: 1px solid gray;
+  z-index: 2;
+}
+@media (max-width: 670px) {
+  .color-header {
+    gap: 30px;
+  }
+}
+
+a {
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.color-title {
+font-family: "Oswald", sans-serif;
+font-weight: bold;
+display: flex;
+height: 50px;
+font-size: 50px;
+justify-content: start;
+align-items: center;
+-webkit-text-stroke: 1px black;
+background: linear-gradient(90deg, rgb(41, 120, 224), rgb(150, 171, 190));
+-webkit-background-clip: text; 
+-webkit-text-fill-color: transparent;
+transition: all 0.3s ease;
+cursor: pointer;
+flex-shrink: 0;
+}
+
+
+
+
+.navigation-bar {
+  display: Flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  height: 50px;
+}
+.signin-signup {
+  display: Flex;
+  border-left: 1px solid rgb(162, 183, 240);
+  justify-content: space-between;
+  align-items: center; 
+  gap: 30px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.sign-up {
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+  color: black;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+  background: linear-gradient(90deg, rgb(92, 88, 129), rgb(32, 34, 145));
+}
+.sign-in {
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+  color: black;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+ 
+}
+.sign-in:hover,
+.sign-up:hover {
+background: linear-gradient(90deg, rgb(92, 88, 129), rgb(32, 34, 145));
+  color: white;
+}
+.about-me {
+  display: flex;
+  justify-content: space-evenly;
+  height: 40px;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+.about-me:hover {
+  color: white;
+  background: linear-gradient(90deg, rgb(92, 88, 129), rgb(32, 34, 145));
+}
+.aboutme {
+  font-weight: bold;
+  font-size: 27px;
+  font-family: "Oswald";
+ 
+}
+
+.me-text {
+  margin-right: 10px;
+  color: rgb(66, 93, 212);
+}
+

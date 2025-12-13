@@ -1,0 +1,792 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  height: 1580px;
+}
+
+.mainpage {
+margin-top: 70px;
+display: grid;
+max-width: 1900px;
+flex-shrink: 0;
+position: relative;
+}
+
+
+
+.main-page {
+ 
+}
+.intro {
+  font-weight: bold;
+  font-size: 95px;
+  white-space: wrap;
+  font-family: "Oswald";
+  flex-shrink: 0;
+  display: flex;
+  margin: 0px;
+}
+
+
+.aboutmeSection {
+  display: grid;
+  position: absolute;
+  border: 1px solid black;
+  background-color: rgb(39, 37, 37);
+  left: 0;
+  top: 100%;
+  right: 0%;
+  border-top: none;
+  height: 0px;
+  opacity: 1;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 100px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+
+.aboutmeSection.btnDown {
+  display: grid;
+  opacity: 1;
+  height: 520px;
+  transition: height 0.3s ease;
+}
+
+
+.sectionAboutme {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+ align-items: center;
+ position: relative;
+ gap: 20px;
+ padding-left: 40px;
+}
+.imageofme {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: flex;
+}
+.introduction {
+  width: 350px;
+  font-family: "Oswald";
+  color: white;
+  display: flex;
+}
+.connectSection {
+  grid-column: 1 / 2 span;
+  display: flex;
+  background: linear-gradient(90deg, rgb(92, 88, 129), rgb(32, 34, 145));
+}
+.contacts {
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+}
+.gd {
+  font-weight: bold;
+  font-size: 40px;
+  white-space: nowrap;
+  position: absolute;
+  display: flex;
+  top: -90px;
+  left: 410px;
+  color: white;
+  font-family: "Oswald";
+}
+
+.fb {
+  width: 20px;
+  display: flex;
+  margin-left: 20px;
+}
+.github {
+  width: 45px;
+  margin-left: 20px;
+  display: flex;
+}
+.connect-text {
+  font-family: "Oswald";
+  font-size: 15px;
+  display: flex;
+}
+.info-project {
+  color: white;
+  font-weight: bold;
+  font-family: "Oswald";
+  font-size: 40px;
+  margin: 0px;
+  display: flex;
+  margin-right: 120px;
+}
+.aboutThisProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.infoPalette {
+  color: white;
+  font-family: "Oswald";
+  width: 400px;
+  display: flex;
+}
+
+
+
+.title1 {
+  display: flex;
+  flex-direction: column;
+    width: 100%;
+  height: 800px;
+  justify-content: start;
+  position: relative;
+  padding-top: 50px;
+  align-items: center;
+ background: linear-gradient(90deg, rgb(92, 88, 129), rgb(32, 34, 145));
+ transition: background 6s ease;
+ 
+}
+
+
+.animate-gradient {
+  animation: gradientShift 6s infinite alternate;
+}
+
+.little-info {
+ 
+  font-size: 19px;
+  color: rgb(0, 0, 0);
+  font-family: "Poppins";
+}
+
+.letters {
+  display: inline-block;
+  margin: 2px;
+}
+
+.letters:hover {
+  cursor: pointer;
+  transition: text-shadow 0.3s ease;
+  
+  animation: wiggle 0.2s infinite alternate;
+}
+
+
+@keyframes wiggle {
+  from {transform: translateX(0);}
+  to {transform: translateX(-10px);}
+}
+.colors,
+.colors2,
+.colors3,
+.colors4  {
+  display: flex;
+
+   width: 500px;
+  height: 150px;
+  justify-content: center;
+  
+   gap: 10px;
+}
+.colors div,
+.colors2 div,
+.colors3 div,
+.colors4 div {
+  display: Flex;
+  height: 145px;
+  flex-direction: row;
+  width: 200px;
+  justify-content: center;
+}
+.box {
+  display: Flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 19px;
+  text-transform: uppercase;
+  cursor: pointer;
+ 
+  border-radius: 10px;
+}
+.sliding {
+  
+  height: 250px;
+ position: relative;
+ overflow: hidden;
+ margin-bottom: 20px;
+}
+.colors, 
+.colors2,
+.colors3,
+.colors4 {
+  animation: scrollUp 6s linear infinite;
+ 
+}
+
+
+@keyframes scrollUp {
+  0%   { transform: translateY(0); }
+  25%   { transform: translateY(-50%); }
+  50%   { transform: translateY(-100%); }
+  75%   { transform: translateY(-150%); }
+  100% { transform: translateY(-205%); }
+}
+
+.colorSearch {
+  display: Flex;
+  position: relative;
+}
+.brush {
+  position: absolute;
+  width: 300px;
+  object-fit: cover;
+  z-index: 1;
+  top: -250px;
+  right: -580px;
+  pointer-events: none;
+}
+.plate {
+  position: absolute;
+  width: 200px;
+  left: -350px;
+  top: -70px;
+ 
+
+}
+.board {
+  position: absolute;
+  width: 600px;
+  top: -330px;
+  left: 230px;
+  pointer-events: none;
+}
+
+.comment-section {
+  position: absolute;
+  right: -394px;
+  bottom: -20%;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: end;
+  text-align: center;
+  
+}
+.comment-list {
+position: absolute; 
+bottom: 10%;
+display: flex;
+align-items: left;
+justify-content: start;
+
+gap: 10px;
+height: 140px;
+width: 189px;
+padding: 0;
+left: -16px;
+flex-direction: column;
+overflow-y: scroll;
+padding-left: 10px;
+}
+.comment-text {
+  margin: 0px;
+  Position: absolute;
+  top: 45px;
+  left: 20px;
+  white-space: nowrap;
+}
+.comment-input {
+display: flex;
+position: initial;
+padding-left: 10px;
+text-align: middle;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+outline: none;
+}
+.comments {
+  display: flex;
+  justify-content: start;
+  text-align: left;
+  width: 160px;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  border: 1px solid gray;
+  padding: 10px;
+  padding-right: 0px;
+}
+
+
+.generator {
+  display: flex;
+  background: blue;
+  border: none;
+  border-radius: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 200px;
+  font-family: "Oswald";
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+.generator i {
+  margin-right: 10px;
+}
+
+.colorGenerator {
+  display: flex;
+
+ 
+  height: 200px;
+  width: 100%;
+  align-self: center;
+ justify-self: center;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+
+}
+.generateColor {
+  display: flex;
+  border-width: 1px;
+  border-radius: solid;
+  width: 200px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: black;
+}
+
+.paletteText {
+  font-weight: bold;
+  font-family: "Oswald";
+  font-size: 60px;
+  position: absolute;
+  left: 42%;
+  top: 0;
+  right: 50%;
+  white-space: nowrap;
+  top: 10px;
+  
+}
+
+.theWhole {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+ background: linear-gradient(90deg, rgb(92, 88, 129), rgb(32, 34, 145));
+}
+
+.divBox {
+  border: 1px solid black;
+  height: 400px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  gap: 20px;
+  background-color: white;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  position: relative;
+}
+.divBox::-webkit-scrollbar {
+  display: none;
+}
+.wholeDesign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.divBox i {
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+   
+}
+
+.divScroll {
+  display: flex;
+  justify-content: space-evenly;
+  height: 90%;
+  min-width: 90%;
+  position: absolute;
+  left: 20px;
+  background-color: white;
+  gap: 30px;
+ 
+}
+
+.div1{
+  display: grid;
+  border: 1px solid black;
+  min-height: 90%;
+  width: 550px;
+  flex-direction: column;
+  z-index: 1;
+  
+
+}
+
+
+.div2 {
+ display: grid;
+  border: 1px solid black;
+  min-height: 90%;
+  width: 550px;
+  flex-direction: column;
+  z-index: 1;
+
+}
+.div3 {
+  display: grid;
+  border: 1px solid black;
+  min-height: 90%;
+  width: 550px;
+  flex-direction: column;
+  z-index: 1;
+  margin-right: 20px;
+
+}
+
+
+
+
+
+.divpage1 {
+  display: flex;
+   z-index: 2;
+   flex-direction: column;
+  height: 100%;
+  min-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.headerDiv1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border: 1px solid black;
+  min-width: 95%;
+  margin-top: 5px;
+  z-index: 2;
+  background-color: white;
+}
+.mainDiv1{
+  display: flex;
+   z-index: 2;  
+  height: 70%;
+  min-width: 95%;
+  justify-content: space-between;
+
+}
+.footerDiv1 {
+  display: flex;
+  border: 1px solid black;
+  min-width: 95%;
+  justify-content: center;
+  height: 10%;
+  align-items: center;
+  margin-bottom: 5px;
+    z-index: 2;
+    background-color: white;
+}
+.asideDiv1 {
+  border: 1px solid black;
+  min-width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  background-color: white;
+}
+.frontDiv1 {
+  display: flex;
+  border: 1px solid black;
+  min-width: 65%;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background-color: white;
+}
+
+
+
+
+
+.divpage2 {
+  display: grid;
+grid-template-columns: 150px 1fr 1fr 1fr;
+grid-template-rows: 150px 1fr 1fr 1fr;
+row-gap: 10px;
+column-gap: 10px;
+margin: 10px;
+}
+.headerDiv2 {
+  grid-row: 1 / 3 span;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.footerDiv2 {
+  grid-row: 4 / 1 span;
+  grid-column: 4 span;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: white;
+}
+
+
+.frontDiv2 {
+grid-column: 2 / 3 span;
+grid-row: 1 / 2 span;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid black;
+background-color: white;
+}
+.asideDiv2 {
+  grid-column: 2 / 3 span;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: white;
+}
+
+
+
+
+.divpage3 {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: 50px 40px 1fr 1fr 40px;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin: 10px;
+  
+}
+.headerDiv3 {
+  grid-column: 1 / 3 span;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: white;
+}
+.navBar {
+  grid-column: 1 / 3 span;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+background-color: white;
+}
+.asideDiv3 {
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+background-color: white;
+}
+.asideDiv32 {
+  display: Flex;
+  border: 1px black solid;
+  grid-row: 4;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+} 
+.frontDiv3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  grid-row: 3 / 2 span;
+  grid-column: 2 / 2 span; 
+  background-color: white;
+}
+.footerDiv3 {
+  display: Flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  grid-column: 1 / 3 span;
+  background-color: white;
+}
+
+
+
+
+#leftIcon {
+  cursor: pointer;
+  color: white;
+  margin-right: 20px;
+  padding: 20px;
+}
+#rightIcon {
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 20px;
+ color: white;
+}
+
+
+.signinPage {
+  position: absolute;
+  top: 100%;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  background: white;
+  display: grid;
+  justify-content: center;
+  padding-top: 50px;
+ align-items: start;
+}
+
+.signinBox {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.google {
+  display: flex;
+  flex-direction: row;
+  
+  border-radius: 10px;
+  border: none;
+  align-items: center;
+  justify-content: start;
+    cursor: pointer;
+}
+.google2 {
+  display: flex;
+  align-items: center;
+ width: 330px;
+ justify-content: start;
+}
+.continue-text {
+justify-content: space-between;
+}
+.hello-text {
+  display: inline-block;
+  margin: 0px;
+  font-size: 100px;
+}
+.email-account {
+  font-size: 22px;
+  
+}
+.fbbutton {
+  display: flex;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+width: 330px;
+}
+.fbSection {
+  display: Flex;
+  align-items: center;
+  justify-content: start;
+  
+ 
+}
+.line {
+  display: flex;
+  border: 1px solid rgb(175, 171, 171);
+  height: 0px;
+  align-self: center;
+  background-color: white;
+  width: 600px;
+  justify-self: center;
+  margin-top: 25px;
+}
+.or-text {
+  position: absolute;
+  bottom: 9%;
+  background-color: white;
+  padding: 0px;
+  font-family: "Oswald";
+  font-weight: bold;
+  
+}
+.continueEmail {
+
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(27, 109, 231);
+  font-weight: bold;
+}
+.fbImage {
+  width: 20px;
+   justify-content: flex-start;
+   padding-left: 20px;
+   padding-right: 45px;
+}
+.googleImage {
+  width: 20px;
+  padding-left: 20px;
+   padding-right: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
